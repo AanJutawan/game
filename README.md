@@ -32,5 +32,27 @@ In each client handler, communication between client and server is done in the f
 
 | Opcode        | Function      |
 | ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| 1             | Sign-Up       |
+| 2          | Change Password  |
+| 3  | Get Messages For A Given User  |
+| 4  | Send A Chat Msg  |
+| 5  | Get All Registered Users  |
+| 6  |  Logout |
+| 7  | Get All Global Chat  |
+| 8  | Get All Possible Friends  |
+| 9 | Add A Friend  |
+| 10  | Get Friends Of A User  |
+| 11 | Delete A Friend  |
+| 12 | Get Available Games To Play  |
+| 13  | Send A Game Request To User  |
+| 14  | Get All Game Requests Sent To A User  |
+| 15  |   Get Online Friends Of A User|
+| 16  | Decline A Game Request  |
+| 17  | Accept A Game Request  |
+| 18  | Get Accepted Game Requests  |
+| 19  | Get Moves Done By A User  |
+| 20  | Store Moves In Database|
+| 21  | Increment User Score |
+| 22  | Get User Scores|
+| 23 | Save Game Session To History|
+| 24 | Get Game History Of A User  |
