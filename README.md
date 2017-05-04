@@ -5,7 +5,7 @@ This is an implementation of a "Steam-like" entertainment platform written entir
 The Game Room is a project I worked on for my **Computer Networks** class. The objectives of this project were to become familiar with the Java programming language, get exposed to a *client-server* architecture, learn the basics of GUI design with Swing and gain experience with database design using mySQL.
 
 <p align="center">
-  <img src="./imgs/general.PNG"  width="600px" height="500px">
+  <img src="./imgs/general.PNG"  width="700px" height="400px">
 </p>
 
 ## Files
