@@ -5,7 +5,7 @@ This is an implementation of a "Steam-like" entertainment platform written entir
 The Game Room is a project I worked on for my **Computer Networks** class. The objectives of this project were to become familiar with the Java programming language, get exposed to a *client-server* architecture, learn the basics of GUI design with Swing and gain experience with database design using mySQL.
 
 <p align="center">
-  <img src="./imgs/intro.jpg"  width="600px">
+  <img src="./imgs/general.PNG"  width="600px">
 </p>
 
 ## Files
@@ -62,9 +62,11 @@ In each client handler, communication between client and server is done in the f
 
 </center>
 
-Once the opcode has been parsed, the server executes the command by using SQL queries provided by `sqlDB.java`. For example, to get a list of all registered users (opcode 5), the server makes use of the `sqlDB.getUsersDB()` method provided by the `sqlDB` class.
+Once the opcode has been parsed, the server executes the command by using SQL queries provided by `sqlDB.java`. For example, to get a list of all registered users (opcode 5), the server makes use of the `sqlDB.getUsersDB()` method provided by the `sqlDB` class. Note that there are 8 mySQL tables that are used to store the information of the **Game Room** application.
 
-There are 8 mySQL tables that are used to store the information of the **Game Room** application. Apart from the client and server code. the GUI is written using the Swing API.
+<p align="center">
+  <img src="./imgs/diag.PNG"  width="600px">
+</p>
 
 ## Features
 
@@ -90,7 +92,7 @@ Also, don't forget to edit `sqlDB` parameters as mentioned previously!
 
 ## Screenshots
 
-
+Coming soon...
 
 ## References
 
