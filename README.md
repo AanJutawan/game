@@ -65,7 +65,7 @@ In each client handler, communication between client and server is done in the f
 Once the opcode has been parsed, the server executes the command by using SQL queries provided by `sqlDB.java`. For example, to get a list of all registered users (opcode 5), the server makes use of the `sqlDB.getUsersDB()` method provided by the `sqlDB` class. Note that there are 8 mySQL tables that are used to store the information of the **Game Room** application.
 
 <p align="center">
-  <img src="./imgs/diag.PNG"  width="600px">
+  <img src="./imgs/diag.PNG"  width="400px">
 </p>
 
 ## Features
@@ -98,4 +98,5 @@ Coming soon...
 
 - Multithreaded Server - click [here](http://stackoverflow.com/questions/12588476/multithreading-socket-communication-client-server)
 - Tic Tac Toe - click [here](http://stackoverflow.com/questions/21806608/doing-tic-tac-toe-game-with-gui-interface-on-java-facing-runtime-error-after-in)
+- Figure 2: Lecture 12, Comp 303, Programming Techniques - click [here](http://cs.mcgill.ca/~adenau/teaching/cs303/lecture12.pdf)
 
