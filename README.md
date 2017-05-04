@@ -30,9 +30,11 @@ The server part of the application is multithreaded. It runs on `localhost` and 
 
 In each client handler, communication between client and server is done in the form of concatenated strings. The server identifies each command using an initial field we call **opcode**, inspired by the one used in assembly instructions.
 
-<p align="center">
+<center>
+
 | Opcode        | Function      |
 | ------------- | ------------- |
+| 0             | Login         |
 | 1             | Sign-Up       |
 | 2          | Change Password  |
 | 3  | Get Messages For A Given User  |
@@ -57,6 +59,41 @@ In each client handler, communication between client and server is done in the f
 | 22  | Get User Scores|
 | 23 | Save Game Session To History|
 | 24 | Get Game History Of A User  |
-</p>
 
+</center>
+
+Once the opcode has been parsed, the server executes the command by using SQL queries provided by `sqlDB.java`. For example, to get a list of all registered users (opcode 5), the server makes use of the `sqlDB.getUsersDB()` method provided by the `sqlDB` class.
+
+There are 8 mySQL tables that are used to store the information of the **Game Room** application. Apart from the client and server code. the GUI is written using the Swing API.
+
+## Features
+
+- Login, Signup
+- Change Password
+- Play Tic Tac Toe
+- Global Real-Time Chat
+- Private Real-Time Chat
+- Add, Remove Friends
+- Accept, Decline Game Request
+- View Hiscore and Ranking
+- View Playing History
+
+## Details for Running the Code
+
+Command line arguments need to be specified before running the code. In Eclipse, this can be done by editing the **Arguments** tab in the Run Configuation window pane (Run > Run Configurations > Arguments).
+
+- **Server Configuration**: just add the port number, for example 6066. Note that by default, it runs on localhost.
+- **Client Configuration**: client requires server address and port number. Since server is localhost by default, add the following to the arguments tab: localhost 6066.
+- **gameRoom GUI Configuration**: same as client.
+
+Also, don't forget to edit `sqlDB` parameters as mentioned previously!
+
+## Screenshots
+
+
+
+## References
+
+- Multithreaded Server - click [here](http://stackoverflow.com/questions/12588476/multithreading-socket-communication-client-server)
+- Tic Tac Toe - click [here](http://stackoverflow.com/questions/21806608/doing-tic-tac-toe-game-with-gui-interface-on-java-facing-runtime-error-after-in)
 
