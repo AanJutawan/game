@@ -25,12 +25,12 @@ The Game Room is a project I worked on for my **Computer Networks** class. The o
 The server part of the application is multithreaded. It runs on `localhost` and actively listens to connections on the port supplied by the command line. It consists of an `acceptClients()` method which loops in the background waiting for a client to connect. When one does, it forks a thread to accept the client in a thread of its own and instantiates a new socket for that client that listens on the same port. Note that the thread handling is asynchronously managed by use of an `ExecutorService`.
 
 <p align="center">
-  <img src="./imgs/socket.PNG"  width="600px">
+  <img src="./imgs/socket.PNG"  width="400px">
 </p>
 
 In each client handler, communication between client and server is done in the form of concatenated strings. The server identifies each command using an initial field we call **opcode**, inspired by the one used in assembly instructions.
 
 <p align="center">
-  <img src="./imgs/opcodes.PNG"  width="600px">
+  <img src="./imgs/opcodes.PNG"  width="300px">
 </p>
 
