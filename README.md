@@ -30,6 +30,7 @@ The server part of the application is multithreaded. It runs on `localhost` and 
 
 In each client handler, communication between client and server is done in the form of concatenated strings. The server identifies each command using an initial field we call **opcode**, inspired by the one used in assembly instructions.
 
+<p align="center">
 | Opcode        | Function      |
 | ------------- | ------------- |
 | 1             | Sign-Up       |
@@ -56,3 +57,6 @@ In each client handler, communication between client and server is done in the f
 | 22  | Get User Scores|
 | 23 | Save Game Session To History|
 | 24 | Get Game History Of A User  |
+</p>
+
+
