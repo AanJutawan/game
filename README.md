@@ -30,7 +30,7 @@ The server part of the application is multithreaded. It runs on `localhost` and 
 
 In each client handler, communication between client and server is done in the form of concatenated strings. The server identifies each command using an initial field we call **opcode**, inspired by the one used in assembly instructions.
 
-<p align="center">
-  <img src="./imgs/opcodes.PNG"  width="300px">
-</p>
-
+| Opcode        | Function      |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
